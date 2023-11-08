@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #c2d9ff;
+}
+.logo {
+  padding-top: 2%;
+  margin-left: 11%;
+  height: 5%;
+}
+
+.app {
+  background-color: whitesmoke;
+  width: 90%;
+  max-width: 40%;
+  border-radius: 5%;
+  padding: 3%;
+  position: absolute;
+  right: 55%;
+  top: 13%;
+  text-align: center;
+}
+
+.app h1 {
+  font-size: 25px;
+  color: #190482;
+  font-weight: bolder;
+  border-bottom: 1px solid #190482;
+  padding-bottom: 30px;
+}
+
+.quiz {
+  padding: 20px 0;
+}
+
+.quiz h2 {
+  font-size: 18px;
+  color: #176b87;
+  font-weight: 600;
+}
+
+.btn {
+  background: whitesmoke;
+  color: black;
+  font-weight: 500;
+  width: 100%;
+  border: 2px solid #190482;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 15px;
+}
+
+.btn:hover:not([disabled]) {
+  background-color: #190482;
+  color: whitesmoke;
+}
+.btn:disabled {
+  cursor: no-drop;
+}
+
+#next-btn {
+  background-color: #190482;
+  color: whitesmoke;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .app {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .app h1 {
+    font-size: 22px;
+  }
+}
+
+.correct {
+  background-color: #009104;
+}
+.incorrect {
+  background-color: #d90a02;
+}
